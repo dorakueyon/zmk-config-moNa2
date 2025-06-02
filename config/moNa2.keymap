@@ -1,15 +1,13 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 5
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer MOUSE 250>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
 
 &mt {
     flavor = "balanced";
@@ -115,10 +113,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans       &trans    &trans  &trans  &trans    &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans       &trans    &trans  &trans  &mkp MB1  &mo 6   &mkp MB4  &trans
-&trans  &trans  &trans  &trans  &ret_kp ESC  &trans    &trans  &trans                              &trans
+&trans  &trans  &trans                &trans  &trans                         &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans                &trans  &trans       &trans    &trans  &trans  &trans    &trans  &mkp MB2  &trans
+&trans  &trans  &trans                &trans  &trans       &trans    &trans  &trans  &mkp MB1  &mo 6   &mkp MB4  &trans
+&trans  &trans  &ret_kp LEFT_COMMAND  &trans  &ret_kp ESC  &trans    &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
