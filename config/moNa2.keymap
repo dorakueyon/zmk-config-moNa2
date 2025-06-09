@@ -1,3 +1,4 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -5,6 +6,25 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 1
+
+
+/ {
+    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        excluded-positions = <
+            18 // J
+            19 // K
+            20 // L
+            // 21 // ;
+            22 // Z
+            30 // M
+            // 34 // Ctrl
+        >;
+    };
+};
+
+&mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
 
 &mt {
     flavor = "balanced";
