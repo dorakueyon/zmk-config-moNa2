@@ -22,16 +22,6 @@
             // 34 // Ctrl
         >;
     };
-
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-        auto-mouse-layer {
-            layers = <DEFAULT MOUSE>;
-            input-processors = <&zip_temp_layer MOUSE 250>;
-        };
-    };
 };
 
 // &mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
