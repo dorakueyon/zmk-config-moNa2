@@ -14,6 +14,14 @@
             ;
 };
 
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+    };
+};
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -47,9 +55,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        // automouse-layer = <1>;
+        automouse-layer = <1>;
         scroll-layers = <6>;
     };
 };
-
-
