@@ -4,6 +4,18 @@
     col-offset = <6>;
 };
 
+/ {
+    custom_temp_layer: custom_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        excluded-positions = <
+            18 // J
+        >;
+    };
+};
+
+&custom_temp_layer 2 250
+
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
