@@ -13,18 +13,19 @@
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         excluded-positions = <
-            18 // J
-            19 // K
-            20 // L
-            // 21 // ;
-            22 // Z
-            30 // M
-            // 34 // Ctrl
+            18
         >;
     };
-};
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
 
-// &mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
+        auto-mouse-layer {
+            layers = <DEFAULT MOUSE>;
+            input-processors = <&zip_temp_layer MOUSE 250>;
+        };
+    };
+};
 
 &mt {
     flavor = "balanced";
