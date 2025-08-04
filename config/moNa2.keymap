@@ -64,7 +64,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        android {
+        ANDROID {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -75,7 +75,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        mouse {
+        MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans    &trans
@@ -86,7 +86,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        number {
+        NUMBER {
             bindings = <
 &kp CARET             &kp EXCLAMATION          &kp AMPERSAND     &kp PIPE           &kp DOLLAR                      &kp AT_SIGN           &kp EQUAL     &kp PLUS      &kp ASTERISK  &kp PERCENT
 &kp NUMBER_1          &mt LEFT_SHIFT NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5  &trans    &trans  &kp NUMBER_6          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
@@ -97,7 +97,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        symbole {
+        SYMBOL {
             bindings = <
 &kp CARET             &kp EXCLAMATION              &kp AMPERSAND         &kp PIPE              &kp DOLLAR                               &kp AT_SIGN         &kp EQUAL            &kp PLUS         &kp ASTERISK     &kp PERCENT
 &mt LCTRL MINUS       &mt LEFT_SHIFT LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &kp LEFT_ARROW      &kp DOWN_ARROW       &kp UP_ARROW     &kp RIGHT_ARROW  &kp SINGLE_QUOTE
@@ -108,7 +108,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        special {
+        SPECIAL {
             bindings = <
 &kp LS(S)  &kp LS(D)  &kp LS(F15)           &kp LG(MINUS)  &kp LG(PLUS)                            &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
 &trans     &trans     &kp LS(F16)           &kp LS(F17)    &kp LS(F18)           &trans    &trans  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
