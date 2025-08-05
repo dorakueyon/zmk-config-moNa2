@@ -66,10 +66,10 @@
 
         ANDROID {
             bindings = <
-&kt Q   &kt W   &kt E   &kt R   &kt T                     &kt Y   &kt U  &kt I      &kt O       &kt P
-&kt A   &kt S   &kt D   &kt F   &kt G   &trans    &trans  &kt H   &kt J  &kt K      &kt L       &kt SEMICOLON
-&kt Z   &kt X   &kt C   &kt V   &kt B   &trans    &trans  &kt N   &kt M  &kt COMMA  &kt PERIOD  &kt SLASH
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
+&kt Q                 &kt W             &kt E                   &kt R        &kt T                                         &kt Y        &kt U  &kt I      &kt O       &kt P
+&mt LEFT_CONTROL A    &mt LEFT_SHIFT S  &kt D                   &kt F        &kt G      &trans              &trans         &kt H        &kt J  &kt K      &kt L       &mt RIGHT_SHIFT SEMICOLON
+&mt LEFT_SHIFT Z      &kt X             &kt C                   &kt V        &lt 6 B    &trans              &trans         &kt N        &kt M  &kt COMMA  &kt PERIOD  &mt RIGHT_CONTROL SLASH
+&mt LEFT_SHIFT LANG2  &kp LEFT_WIN      &mt LEFT_CONTROL LANG2  &lt 3 SPACE  &lt 5 ESC  &mt LEFT_ALT TAB    &kp BACKSPACE  &lt 4 ENTER                                &mt RSHIFT LANG1
             >;
 
             sensor-bindings = <&scroll_up_down>;
