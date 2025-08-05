@@ -66,10 +66,10 @@
 
         ANDROID {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kt Q   &kt W   &kt E   &kt R   &kt T                     &kt Y   &kt U  &kt I      &kt O       &kt P
+&kt A   &kt S   &kt D   &kt F   &kt G   &trans    &trans  &kt H   &kt J  &kt K      &kt L       &kt SEMICOLON
+&kt Z   &kt X   &kt C   &kt V   &kt B   &trans    &trans  &kt N   &kt M  &kt COMMA  &kt PERIOD  &kt SLASH
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
